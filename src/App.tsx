@@ -13,11 +13,9 @@ import {
 function App() {
   const [calculation, setCalculation] = useState<string>('');
   const [result, setResult] = useState<string | number>('');
-
   const handleButtonClick = (value: string) => {
     setCalculation((prev) => prev + value);
   };
-
 
   const handleCalculate = () => {
     try {
@@ -32,8 +30,7 @@ function App() {
     setCalculation('');
     setResult('');
   }
-
-
+  
   const handleBackspace = () => {
     setCalculation((prev) => prev.slice(0, -1));
   };
@@ -62,7 +59,6 @@ function App() {
           <button onClick={() => handleButtonClick('7')}>7</button>
           <button className="orange" onClick={() => handleButtonClick('*')}>
             <IconX stroke={2} />
-
           </button>
           <button onClick={() => handleButtonClick('4')}>4</button>
           <button onClick={() => handleButtonClick('5')}>5</button>
