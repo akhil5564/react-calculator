@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Display from "./components/display/display";
 import {
   IconBackspace,
