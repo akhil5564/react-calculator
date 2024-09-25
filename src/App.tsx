@@ -37,7 +37,7 @@ function App() {
 
 
 
-  return (
+  return (  
     <>
 
       <Display calculation={calculation} result={result.toString()} />
